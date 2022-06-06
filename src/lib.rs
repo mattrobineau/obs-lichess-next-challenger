@@ -1,8 +1,6 @@
 #[macro_use]
 extern crate lazy_static;
 
-use log::{error, info, warn};
-use log4rs;
 use serde_json::Value;
 use std::ffi::{CStr, CString};
 use std::sync::Mutex;
