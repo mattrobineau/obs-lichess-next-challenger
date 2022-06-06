@@ -5,7 +5,7 @@ ffi.cdef [[
     void terminate();
 ]]
 
-local lib = ffi.load('g:/repositories/obs/obs-lichess-next-challenger/target/debug/obs_lichess_next_opponent.dll')
+local lib = ffi.load(script_path() .. '/obs_lichess_next_opponent.dll')
 
 obs = obslua
 source_name = ""
