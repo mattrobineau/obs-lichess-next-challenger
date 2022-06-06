@@ -17,7 +17,7 @@ The `board:play` permission is used by the script to recieve the event stream fo
 | `challengeCanceled` | Fetch next challenger if current next challenger cancelled the challenge|
 | `challenge` | Displays challenger if no challenge exists, increment challenger count|
 
-![token permissions screen](https://github.com/mattrobineau/obs-lichess-next-challenger/screenshots/token_creation.png)
+![token permissions screen](https://github.com/mattrobineau/obs-lichess-next-challenger/blob/main/screenshots/token_creation.png)
 
 Copy the token string and keep it handy for the next part. If you lose or forget the token string, its gone FOREVER!!!. But you can easily create a new one so it's not the end of the world.
 
@@ -27,7 +27,7 @@ In OBS, go to `Tools -> Scripts`. Press the + (plus) on the bottom left and sele
 
 Once loaded, fill in the properties:
 
-![OBS properties screen](https://github.com/mattrobineau/obs-lichess-next-challenger/screenshots/obs_setup.png)
+![OBS properties screen](https://github.com/mattrobineau/obs-lichess-next-challenger/blob/main/screenshots/obs_setup.png)
 
 #### Text Source
 Select a text source to use for displaying the message. (Must be a text source)
