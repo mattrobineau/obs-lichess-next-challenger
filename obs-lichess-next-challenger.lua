@@ -60,6 +60,7 @@ function script_update(settings)
         enabled = "enabled"
     end
     print("obs_lichess_next_opponent source " .. source_name .. " is " .. enabled)
+    obs.obs_source_release(source)
     -- reset in case token has changed
     reset()
 end
@@ -90,6 +91,8 @@ function source_activated(data)
             connect()
         end
     end
+
+    obs.obs_source_release(source)
 end
 
 function connect()
@@ -119,6 +122,8 @@ function source_deactivated(data)
             is_source_enabled = false
         end
     end
+
+    obs.obs_source_release(source)
 end
 
 function script_unload(settings)
@@ -154,4 +159,5 @@ function set_text(text)
         obs.obs_data_release(settings)
         obs.obs_source_release(source)
     end
+    obs.obs_source_release(source)
 end
