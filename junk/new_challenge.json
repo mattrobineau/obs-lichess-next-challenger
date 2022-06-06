@@ -1,0 +1,44 @@
+{
+  "type": "challenge",
+  "challenge": {
+    "id": "Ba2wQMhx",
+    "url": "https://lichess.org/Ba2wQMhx",
+    "status": "created",
+    "challenger": {
+      "id": "twodogsinatrenchcoat",
+      "name": "TwoDogsInATrenchCoat",
+      "title": null,
+      "rating": 1500,
+      "provisional": true,
+      "online": true
+    },
+    "destUser": {
+      "id": "mattrobineau",
+      "name": "mattrobineau",
+      "title": null,
+      "rating": 1685,
+      "provisional": true,
+      "online": true
+    },
+    "variant": {
+      "key": "standard",
+      "name": "Standard",
+      "short": "Std"
+    },
+    "rated": false,
+    "speed": "correspondence",
+    "timeControl": {
+      "type": "unlimited"
+    },
+    "color": "black",
+    "finalColor": "black",
+    "perf": {
+      "icon":"\ue02e",
+      "name": "Correspondence"
+    }
+  },
+  "compat": {
+    "bot": false,
+    "board": true
+  }
+}
