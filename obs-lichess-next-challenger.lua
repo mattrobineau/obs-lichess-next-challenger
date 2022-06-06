@@ -93,7 +93,7 @@ function source_activated(data)
 end
 
 function connect()
-    if not is_source_enabled then
+    if is_source_enabled then
         if token == '' or token == nil then
             set_text("Error: token")
             print("obs_lichess_next_opponent Token is not set")
@@ -128,6 +128,7 @@ end
 
 function reset()
     print("obs_lichess_next_opponent reset")
+    obs.timer_remove(set_challenger)
     lib.terminate()
     connect()
 end
