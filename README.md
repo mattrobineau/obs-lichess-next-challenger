@@ -12,7 +12,7 @@ The `challenger:read` permission allows the script to view the list of challenge
 The `board:play` permission is used by the script to recieve the event stream for a player. The script looks for the following event types:
 
 | Type | Use |
-|===|===|
+|---|---|
 | `gameStart` | Fetch and display next challenger |
 | `challengeCanceled` | Fetch next challenger if current next challenger cancelled the challenge|
 | `challenge` | Displays challenger if no challenge exists, increment challenger count|
