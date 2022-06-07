@@ -5,7 +5,7 @@ ffi.cdef [[
     void terminate();
 ]]
 
-local lib = ffi.load(script_path() .. '/obs_lichess_next_opponent.dll')
+local lib = ffi.load(script_path() .. 'obs_lichess_next_opponent.dll')
 
 obs = obslua
 source_name = ""
@@ -36,6 +36,10 @@ function script_properties()
     obs.obs_properties_add_text(props, "template", "Template", obs.OBS_TEXT_DEFAULT)
 
     return props
+end
+
+function script_description()
+    return "<h1>Lichess Next Opponent</h1><p>Fetches the next challenger at the tops of lichess' challengers list.</p>"
 end
 
 -- called to set the initial default values
